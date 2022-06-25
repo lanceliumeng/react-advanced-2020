@@ -9,7 +9,7 @@ Let's say init count value = 0, if I click add btn 3 times,the setState will tri
 That's why even 3 times clicked, the update state still is 1, not 3 in this case.
 But functional form can resolve this issue.
 **Therefore,everytime if we want to base on previous state to update current state, use functional form in setState**
-setState(count + 1) ❌
+setState(count + 1) ❌  
 setState((prevState) => prevState + 1) ✅ _AND functional form always need return a value(not undefined!)_
 
 #### Projects
