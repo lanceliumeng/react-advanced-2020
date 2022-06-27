@@ -16,6 +16,7 @@ const UseEffectFetchData = () => {
     }
   };
   //in useEffect, we call that async fetch function, but remember, we only need call it once by using [] dependency.
+  //CANNOT set useEffect to async function!
   useEffect(() => {
     fetchUsers();
   }, []);
