@@ -13,13 +13,13 @@ const UseEffectCleanup = () => {
   useEffect(() => {
     console.log("use Effect");
     window.addEventListener("resize", checkSize);
-    console.log(size);
+    // console.log(size);
     //remeber: everytime when we addEventListener, we need to remove it incase we put too much same event listener in browser
     return () => {
       console.log("cleanup");
       window.removeEventListener("resize", checkSize);
     };
-  }, []);
+  }, [size]);
   console.log("render", size);
   return (
     <>
