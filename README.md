@@ -12,36 +12,11 @@ But functional form can resolve this issue.
 setState(count + 1) ❌  
 setState((prevState) => prevState + 1) ✅ _AND functional form always need return a value(not undefined!)_
 
-#### Projects
+#### Form
 
-1. Birthday Reminder
+Note: in 04-forms folder, we will know one important thing is:  
+React form has two way to handle form submit(find examples in 04-forms folder)
 
-#### useEffect and Conditional Rendering
-
-2. Tours
-3. Reviews
-4. Accordion
-5. Menu
-6. Tabs
-7. Slider
-
-#### Forms
-
-8. Lorem Ipsum Generator
-9. Color Shades Generator
-10. Grocery Bud
-
-#### useRef
-
-11. Navbar
-
-#### useContext
-
-12. Modal and Sidebar
-13. Stripe Menus
-
-#### useReducer and useContext
-
-14. Cart
-
-#### React Router
+1. submitHandler + form tag and onSubmit event
+   OR
+2. submitHandler + Button tag, btn type is submit and onClick event
